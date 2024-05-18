@@ -57,7 +57,7 @@ void UtilRPI::_get_board_type_using_peripheral_base()
         fclose(fp);
     }
 
-    switch (base) {
+    switch (0xfe000000) {
         case 0x0:
             _linux_board_version = LINUX_BOARD_TYPE::UNKNOWN_BOARD;
             printf("Cannot detect board-type \r\n");
